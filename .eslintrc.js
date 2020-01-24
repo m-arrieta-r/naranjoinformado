@@ -1,17 +1,29 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    node: true
+  "env": {
+    "es6": true,
+    "node": true
   },
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+  "extends": [
+    "standard"
   ],
-  // add your custom rules here
-  rules: {
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "space-before-function-paren": [
+      "warn", {
+        "anonymous": "never",
+        "named": "never"
+      }
+    ]
   }
-}
+};

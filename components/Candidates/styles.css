@@ -1,0 +1,16 @@
+.subcontainer {
+  background: #192734;
+  padding: 15px;
+  border-radius: 14px;
+  margin: 10px;
+  color: white;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,51 +1,29 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        naranjoinformado
-      </h1>
-      <h2 class="subtitle">
-        Sitio de elecciones municipales
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <Logo />
+    <Candidates />
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Candidates from '~/components/Candidates/index.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Candidates
   }
 }
 </script>
 
 <style>
+body {
+  background: #15202b;
+}
+
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: 10px;
 }
 
 .title {
